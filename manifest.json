@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github Colors",
+  "description": "Change the color scheme of your github color map",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "color.js"
+  ]
+}
