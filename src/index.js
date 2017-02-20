@@ -26,7 +26,7 @@ function isGithubUrl( url ) {
 // Inject script in head tag
 function createScript() {
   const s = document.createElement( 'script' );
-  s.src = chrome.extension.getURL( 'color.js' );
+  s.src = chrome.extension.getURL( 'src/color.js' );
   s.onload = function() { this.remove(); };
   (document.head || document.documentElement).appendChild(s);
 }
