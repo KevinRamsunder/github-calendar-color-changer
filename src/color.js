@@ -28,10 +28,17 @@ const colorPalette = {
     '#284a92',
     '#192062',
   ],
+  black: [
+    '#f7f7f7',
+    '#bcbcbc',
+    '#7c7c7c',
+    '#212121',
+    '#111111',
+  ],
 };
 
-// the colors we want to use. @todo make this dynamic with a menu to choose from
-const COLOR_PALETTE = 'blueness';
+// the color scheme we want to use. @todo make this dynamic with a menu to choose from
+const COLOR_PALETTE = 'black';
 
 // swap out github's colors with our colors
 function colorSwap( color='' ) {
