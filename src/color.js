@@ -14,10 +14,17 @@ const colorPalette = {
     '#F99802',
     '#070A21',
   ],
+  redness: [
+    '#fee2d5',
+    '#fcaf93',
+    '#fb7252',
+    '#e53228',
+    '#820711',
+  ]
 };
 
 // the colors we want to use. @todo make this dynamic with a menu to choose from
-const COLOR_PALETTE = 'halloween';
+const COLOR_PALETTE = 'redness';
 
 // swap out github's colors with our colors
 function colorSwap( color='' ) {
