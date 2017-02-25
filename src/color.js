@@ -1,17 +1,38 @@
+// @todo move this to another file. require/import doesn't work, chrome extensions are weird
+const colorPalette = {
+  blue: [
+    '#eeeeee',
+    '#85C9E6',
+    '#65A6C7',
+    '#407FA3',
+    '#1E4A69',
+  ],
+  halloween: [
+    '#eeeeee',
+    '#FCEF50',
+    '#FFC707',
+    '#F99802',
+    '#070A21',
+  ],
+};
+
+// the colors we want to use. @todo make this dynamic with a menu to choose from
+const COLOR_PALETTE = 'halloween';
+
 // swap out github's colors with our colors
 function colorSwap( color='' ) {
   switch ( color.toLowerCase() ) {
     case '#eee':
     case '#eeeeee':
-      return '#eeeeee';
+      return colorPalette[ COLOR_PALETTE ][ 0 ];
     case '#d6e685':
-      return '#85C9E6';
+      return colorPalette[ COLOR_PALETTE ][ 1 ];
     case '#8cc665':
-      return '#65A6C7';
+      return colorPalette[ COLOR_PALETTE ][ 2 ];
     case '#44a340':
-      return '#407FA3';
+      return colorPalette[ COLOR_PALETTE ][ 3 ];
     case '#1e6823':
-      return '#1E4A69';
+      return colorPalette[ COLOR_PALETTE ][ 4 ];
     default:
       return color;
   }
