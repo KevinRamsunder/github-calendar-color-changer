@@ -20,11 +20,18 @@ const colorPalette = {
     '#fb7252',
     '#e53228',
     '#820711',
-  ]
+  ],
+  blueness: [
+    '#b7dfcb',
+    '#58b9d0',
+    '#2986b8',
+    '#284a92',
+    '#192062',
+  ],
 };
 
 // the colors we want to use. @todo make this dynamic with a menu to choose from
-const COLOR_PALETTE = 'redness';
+const COLOR_PALETTE = 'blueness';
 
 // swap out github's colors with our colors
 function colorSwap( color='' ) {
