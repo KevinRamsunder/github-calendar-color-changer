@@ -43,15 +43,22 @@ const COLOR_PALETTE = 'black';
 // swap out github's colors with our colors
 function colorSwap( color='' ) {
   switch ( color.toLowerCase() ) {
+    case '#eee':
+    case '#eeeeee':
     case '#ebedf0':
       return colorPalette[ COLOR_PALETTE ][ 0 ];
+    case '#d6e685'
     case '#c6e48b':
       return colorPalette[ COLOR_PALETTE ][ 1 ];
+    case '#8cc665':
     case '#7bc96f':
       return colorPalette[ COLOR_PALETTE ][ 2 ];
+    case '#44a340':
     case '#239a3b':
       return colorPalette[ COLOR_PALETTE ][ 3 ];
+    case '#1e6823':
     case '#239a3b':
+    case '#196127':
       return colorPalette[ COLOR_PALETTE ][ 4 ];
     default:
       return color;
